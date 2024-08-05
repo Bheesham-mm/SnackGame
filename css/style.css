@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.body{
+    background: url("../img/bg\ copy.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition-: ; */
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: monospace;
+    color: white;
+
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 9px;
+    font-size: 39px;
+    font-weight: bold;
+    left: 15px;
+    font-family: monospace;
+    color: white;
+}
+
+#board{
+    background: linear-gradient(rgba(170, 236, 170, 0.429), rgba(236, 236, 167, 0.516));
+    width: 90vmin;
+    height: 92vmin;
+    border: 5px solid black;
+    border-radius: 12px;
+    box-shadow: 0px 0px 30px green;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+    display: flex;
+    /* justify-content: space-around;
+    height: 30px;
+    width: 27px; */
+    align-items: center;
+}
+
+.aye{
+    background: #000000b5;
+    width: 9px;
+    display: inline-block;
+    height: 12px;
+    border-radius: 100%;
+    opacity: 5;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
